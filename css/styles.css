@@ -1,0 +1,9 @@
+body {
+  background-color: palevioletred;
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large;
+ color: whitesmoke;
+ display: flex;
+ flex-direction: column;
+ 
+}
