@@ -24,8 +24,8 @@ return {
 
 console.log(pokemonRepository.getAll());
 
-pokemonRepository.forEach(function(getAll) {
-  document.write('<p>' + pokemonList.name + ' (height: ' + pokemonList.height + ')')
+pokemonRepository.getAll().forEach(function(pokemon) {
+  document.write('<p>' + pokemon.name + ' (height: ' + pokemon.height + ')')
 });
 
 
