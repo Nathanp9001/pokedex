@@ -29,7 +29,7 @@ function addListItem(pokemon){
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
   document.createElement('button');
-  button.addEventListener('click', function (pokemon) {
+  button.addEventListener('click', function (event) {
     showDetails(pokemon);
   });
 }
