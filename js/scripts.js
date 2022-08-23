@@ -9,7 +9,7 @@ function add(pokemon) {
     typeof pokemon === "object" &&
     "name" in pokemon
   ) {
-    pokemonRepository.push(pokemon);
+    pokemonList.push(pokemon);
   } else {
     console.log("pokmeon is not correct");
   }
@@ -40,13 +40,13 @@ function addListItem(pokemon){
 }
 
 function loadList() {
-  return fetch(apiUrl).then(function response) {
+  return fetch(apiUrl).then(function (response) {
     return response.json();
   }).then(function (json) {
     json.results.forEach(function (item) {
       let pokemon = {
         name: item.name,
-        detailsUrl: item.apiUrl
+        detailsUrl: item.url,
       };
       add(pokemon);
       console.log(pokemon);
@@ -58,7 +58,7 @@ function loadList() {
 
 
 function loadDetails(item) {
-  leturl = item.detailsUrl;
+  let url = item.detailsUrl;
   return fetch(url).then(function (response) {
     return response.json();
   }).then(function (details) {
