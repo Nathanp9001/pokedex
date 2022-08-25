@@ -137,8 +137,8 @@ modalContainer.addEventListener('click', (e) => {
   }
 });
 
-document.querySelector('#show-modal').addEventListener('click', () => {
-  showModal('Pokemon name', 'type/height');
+document.querySelector('.pokemon-list').addEventListener('click', () => {
+  showModal();
 });
 
 })();
