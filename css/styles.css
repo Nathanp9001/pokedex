@@ -114,3 +114,16 @@ font-size: 150px;
   margin-bottom: 0;
   font-size: 40px;
 }
+
+@media screen and (max-width: 1028px) {
+  .pokemon-list li{
+    display: inline-block;
+  }
+
+  #modal-container.is-visible {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+   }
+}
