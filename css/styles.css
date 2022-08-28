@@ -127,3 +127,7 @@ font-size: 150px;
     margin: auto;
    }
 }
+
+.img-element _{
+  size: 200px;
+}

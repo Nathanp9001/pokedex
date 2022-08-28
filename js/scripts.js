@@ -20,7 +20,7 @@ function getAll() {
 
 function showDetails(pokemon) {
   loadDetails(pokemon).then(function () {
-    showModal(pokemon.name, `height: ${pokemon.height}`);
+    showModal(pokemon.name, `height: ${pokemon.height}`, pokemon.imageUrl);
   });
 }
 
@@ -41,15 +41,17 @@ titleElement.innerText = title;
 let contentElement = document.createElement('p');
 contentElement.innerText = text;
 
-// let imageElement = document.createElement('img');
-// imageElement.setAttribute('src', img);
+let imageElement = document.createElement('img');
+imageElement.classList.add('img-element');
+imageElement.src = pokemon.imageUrl;
 
   modal.appendChild(closeButtonElement);
   modal.appendChild(titleElement);
   modal.appendChild(contentElement);
-  // modal.appendChild(imageElement);
+  modal.appendChild(imageElement);
   modalContainer.appendChild(modal);
-  
+
+
   
   modalContainer.classList.add('is-visible');
 }
