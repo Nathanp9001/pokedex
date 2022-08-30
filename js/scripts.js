@@ -25,7 +25,7 @@ function showDetails(pokemon) {
 }
 
 //opens modal with info about pokemon when button is clicked
-function showModal(title, text) {
+function showModal(title, text, imageUrl) {
   modalContainer.innerHTML = '';
   let modal = document.createElement('div');
   modal.classList.add('modal');
@@ -37,13 +37,15 @@ closeButtonElement.addEventListener('click', hideModal);
 
 let titleElement = document.createElement('h1');
 titleElement.innerText = title;
+titleElement.classList.add('modal-title');
 
 let contentElement = document.createElement('p');
 contentElement.innerText = text;
+contentElement.classList.add('modal-text');
 
 let imageElement = document.createElement('img');
 imageElement.classList.add('img-element');
-imageElement.src = pokemon.imageUrl;
+imageElement.src = imageUrl;
 
   modal.appendChild(closeButtonElement);
   modal.appendChild(titleElement);

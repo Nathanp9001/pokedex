@@ -86,7 +86,7 @@ font-size: 150px;
   box-sizing: border-box;
   background: palevioletred;
   border: 2px solid white;
-  padding: 15px;
+  padding: 100px;
   width: 100%;
   max-width: 1000px;
   height: 100%;
@@ -96,24 +96,41 @@ font-size: 150px;
 
 
 .modal-close {
-  float: right;
-  font-size: 25px;
+  position: fixed;
+  right: 400px;
+  top: 130px;
+  font-size: 35px;
   -webkit-appearance: none;
   border: 0;
   background: none;
   color: white;
   cursor: pointer;
+
 }
 
-#modal-title {
+.modal-title {
   margin-top: 0;
-  font-size: 75px;
+  font-size: 200px;
+  text-transform: capitalize;
+  position: fixed;
+  right: 600px;
+  top: 100px;
 }
 
-#modal-text {
+.modal-text {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 75px;
+  position: fixed;
+  left: 700px;
+  bottom: 300px;
 }
+
+.img-element {
+  width: 250px;
+  position: fixed;
+  right: 575px;
+  top: 500px;
+  }
 
 @media screen and (max-width: 1028px) {
   .pokemon-list li{
@@ -128,6 +145,3 @@ font-size: 150px;
    }
 }
 
-.img-element _{
-  size: 200px;
-}
