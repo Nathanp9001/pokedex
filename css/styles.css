@@ -15,7 +15,7 @@ font-size: 150px;
   list-style-type: none;
 }
 
-.button-class {
+.btn {
   font-family: inherit;
   font-weight: 700;
   text-transform: capitalize;
@@ -56,7 +56,7 @@ font-size: 150px;
   border: 5px solid white;
 }
 
-#modal-container {
+.modal-container {
   display: none;
 }
 
@@ -96,9 +96,6 @@ font-size: 150px;
 
 
 .modal-close {
-  position: fixed;
-  right: 400px;
-  top: 130px;
   font-size: 35px;
   -webkit-appearance: none;
   border: 0;
@@ -112,24 +109,15 @@ font-size: 150px;
   margin-top: 0;
   font-size: 200px;
   text-transform: capitalize;
-  position: fixed;
-  right: 600px;
-  top: 100px;
 }
 
-.modal-text {
+.modal-body {
   margin-bottom: 0;
   font-size: 75px;
-  position: fixed;
-  left: 700px;
-  bottom: 300px;
 }
 
 .img-element {
   width: 250px;
-  position: fixed;
-  right: 575px;
-  top: 500px;
   }
 
 @media screen and (max-width: 1028px) {

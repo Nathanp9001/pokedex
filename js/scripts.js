@@ -20,42 +20,33 @@ function getAll() {
 
 function showDetails(pokemon) {
   loadDetails(pokemon).then(function () {
-    showModal(pokemon.name, `height: ${pokemon.height}`, pokemon.imageUrl);
+    showModal(pokemon);
   });
 }
 
 //opens modal with info about pokemon when button is clicked
-function showModal(title, text, imageUrl) {
-  modalContainer.innerHTML = '';
-  let modal = document.createElement('div');
-  modal.classList.add('modal');
+function showModal(pokemon) {
+let modalBody = $('.modal-body');
+let modalTitle = $('.modal-title');
+let modalHeader = $('.modal-header');
 
-let closeButtonElement = document.createElement('button');
-closeButtonElement.classList.add('modal-close');
-closeButtonElement.innerText = 'X';
-closeButtonElement.addEventListener('click', hideModal);
+modalTitle.empty();
+modalBody.empty();
 
-let titleElement = document.createElement('h1');
-titleElement.innerText = title;
-titleElement.classList.add('modal-title');
-
-let contentElement = document.createElement('p');
-contentElement.innerText = text;
-contentElement.classList.add('modal-text');
-
-let imageElement = document.createElement('img');
-imageElement.classList.add('img-element');
-imageElement.src = imageUrl;
-
-  modal.appendChild(closeButtonElement);
-  modal.appendChild(titleElement);
-  modal.appendChild(contentElement);
-  modal.appendChild(imageElement);
-  modalContainer.appendChild(modal);
+let nameElement = $('<h1>' + pokemon.name + '</h1>');
+let imageElement = $('<img class="modal-img" style="width:50%">');
+imageElement.attr('src', pokemon.imageUrl)
+let heightElement = $('<p>' + 'height : ' + pokemon.height + '</p>');
+let typesElement = $('<p>' + 'types : ' + pokemon.types + '</p>');
 
 
-  
-  modalContainer.classList.add('is-visible');
+modalTitle.append(nameElement);
+modalBody.append(imageElement);
+modalBody.append(heightElement);
+modalBody.append(typesElement);
+
+
+modalContainer.classList.add('is-visible');
 }
 
 function hideModal() {
@@ -84,9 +75,10 @@ modalContainer.addEventListener('click', (e) => {
 function addListItem(pokemon){
   let pokemonList = document.querySelector('.pokemon-list');
   let listPokemon = document.createElement('li');
+  pokemonList.classList.add('group-list-item');
   let button = document.createElement('button');
   button.innerText = pokemon.name;
-  button.classList.add('button-class');
+  button.classList.add('btn');
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
   document.createElement('button');
