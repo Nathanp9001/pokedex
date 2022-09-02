@@ -56,7 +56,7 @@ font-size: 150px;
   border: 5px solid white;
 }
 
-.modal-container {
+#modal-container {
   display: none;
 }
 
@@ -64,10 +64,13 @@ font-size: 150px;
  position: fixed; 
   padding: 20px;
   box-sizing: border-box;
-  top: 0;
-  left: 350px;
-  width: 70%;
-  height: 100%;
+  bottom: 0;
+  left: 450px;
+  max-height: 800px;
+  max-width: 1000px;
+  background-color: palevioletred;
+
+
 
   /* to show it above other content */
   z-index: 999; 
@@ -105,25 +108,20 @@ font-size: 150px;
 
 }
 
-.modal-title {
-  margin-top: 0;
-  font-size: 200px;
+h2 {
+  font-size: 120px;
   text-transform: capitalize;
 }
 
 .modal-body {
   margin-bottom: 0;
-  font-size: 75px;
+  font-size: 50px;
 }
 
-.img-element {
-  width: 250px;
+.modal-img {
+  float: right;
   }
 
-@media screen and (max-width: 1028px) {
-  .pokemon-list li{
-    display: inline-block;
-  }
 
   #modal-container.is-visible {
     top: 0;
@@ -131,5 +129,5 @@ font-size: 150px;
     right: 0;
     margin: auto;
    }
-}
+
 
