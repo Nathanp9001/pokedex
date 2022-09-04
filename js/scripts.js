@@ -77,7 +77,6 @@ function addListItem(pokemon){
   button.classList.add('btn');
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
-  document.createElement('button');
   button.addEventListener('click', function (event) {
     showDetails(pokemon);
   });
@@ -138,5 +137,7 @@ pokemonRepository.addListItem(pokemon);
 });
 
 
-//make buttons display pokemon details
+//display types correctly
 //make display correctly for mobile
+//fade effect
+//modal close button

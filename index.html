@@ -22,14 +22,25 @@
     <h1>Pokedex</h1>
 
     <!-- list of pokemon -->
-    <ul class="pokemon-list group-list"></ul>
+    <div class="container-fluid">
+      <ul class="pokemon-list group-list col-1"></ul>
 
-    <!-- modal -->
-    <div id="modal-container">
-      <div class="modal-header">
-        <div class="modal-title"></div>
+      <!-- modal -->
+      <div id="modal-container" class="col-7 modal">
+        <div class="modal-header">
+          <div class="modal-title"></div>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            X
+          </button>
+        </div>
+        <div class="modal-body"></div>
       </div>
-      <div class="modal-body"></div>
+      <div class="col"></div>
     </div>
 
     <script
