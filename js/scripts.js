@@ -48,15 +48,6 @@ modalBody.append(typesElement);
 
 };
 
-// function hideModal() {
-//   modalContainer.classList.remove('is-visible');
-// }
-
-// window.addEventListener('keydown', (e) => {
-//   if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-//     hideModal();
-//   }
-// });
 
 
 //show list of pokemon
@@ -133,7 +124,5 @@ pokemonRepository.addListItem(pokemon);
 });
 
 
-//display types correctly
 //make display correctly for mobile
-//fade effect
 //modal close button
