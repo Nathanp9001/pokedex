@@ -26,21 +26,30 @@
       <ul class="pokemon-list group-list col-1"></ul>
 
       <!-- modal -->
-      <div id="modal-container" class="col-7 modal">
-        <div class="modal-header">
-          <div class="modal-title"></div>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            X
-          </button>
-        </div>
-        <div class="modal-body"></div>
-      </div>
+
       <div class="col"></div>
+    </div>
+
+    <div
+      id="modal"
+      class="col-7 modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-header">
+        <div class="modal-title" id="modal-label"></div>
+        <button
+          type="button"
+          class="modal-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          X
+        </button>
+      </div>
+      <div class="modal-body"></div>
     </div>
 
     <script
@@ -63,3 +72,20 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
+<!-- <div id="modal-container" class="col-7 modal">
+  <div class="modal-header">
+    <div class="modal-title"></div>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+    >
+      X
+    </button>
+  </div>
+  <div class="modal-body"></div>
+</div>
+<div class="col"></div>
+</div> -->
