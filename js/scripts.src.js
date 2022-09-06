@@ -28,7 +28,6 @@ function showDetails(pokemon) {
 function showModal(pokemon) {
 let modalBody = $('.modal-body');
 let modalTitle = $('.modal-title');
-// let modalHeader = $('.modal-header');
 
 modalTitle.empty();
 modalBody.empty();
@@ -45,7 +44,6 @@ modalBody.append(imageElement);
 modalBody.append(heightElement);
 modalBody.append(typesElement);
 
-
 };
 
 
@@ -58,10 +56,8 @@ function addListItem(pokemon){
   let button = document.createElement('button');
   button.innerText = pokemon.name;
   button.classList.add('btn');
-
   button.setAttribute('data-toggle', 'modal');
   button.setAttribute('data-target', '#modal');
-
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
   button.addEventListener('click', function (event) {
@@ -122,7 +118,3 @@ pokemonRepository.addListItem(pokemon);
   });
 
 });
-
-
-//make display correctly for mobile
-//modal close button
