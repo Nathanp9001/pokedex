@@ -1,7 +1,3 @@
-using HTML, CSS, and JavaScript.
-It uses jquery, bootstrap, and popper. It also contains polyfills for promises and fetch.
-Data is from an API called pokeapi.co
-
 # Pokedex
 
 This is a pokedex website to display information about different pokemon
@@ -17,6 +13,7 @@ https://nathanp9001.github.io/pokedex/
 - JavaScript
 - Bootstrap
 - JQuery
+- Popper
 
 # API
 
